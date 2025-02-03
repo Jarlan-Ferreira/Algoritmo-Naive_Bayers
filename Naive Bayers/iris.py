@@ -86,6 +86,9 @@ cm = confusion_matrix(np.array(y_test, dtype=str), np.array(y_pred, dtype=str))
 print("Confusion Matrix:")
 print(cm)
 
+
+
+#Testes independetes
 # Classificação usando Naive Bayes do Scikit-learn
 from sklearn.naive_bayes import GaussianNB
 
