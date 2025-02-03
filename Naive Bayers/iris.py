@@ -60,13 +60,6 @@ for i in range(len(classes)):  # Para cada classe no conjunto de dados
 # 📌 Exibir as probabilidades calculadas
 print(P.head(10))
 
-# 📌 Exibir uma imagem ilustrativa
-img = mpimg.imread('iris_type.jpg')  
-plt.figure(figsize=(10, 5))
-plt.axis('off')
-plt.imshow(img)
-plt.show()
-
 # 📌 Calcula a acurácia do classificador manual
 from sklearn.metrics import accuracy_score
 
@@ -110,3 +103,11 @@ print('Accuracy utilizando BernoulliNB:', score)
 # 📌 Exibir previsões comparando valores reais e previstos
 df = pd.DataFrame({'Real Values': y_test, 'Predicted Values': y_pred})
 print(df.head(10))  
+
+
+# 📌 Exibir uma imagem ilustrativa
+img = mpimg.imread('iris_type.jpg')  
+plt.figure(figsize=(10, 5))
+plt.axis('off')
+plt.imshow(img)
+plt.show()
